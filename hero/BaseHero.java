@@ -97,11 +97,6 @@ public abstract class BaseHero implements BaseHeroInterface {
     }
 
 
-    // Вывод в строковом виде - Имени класса
-    public String getInfo() {
-        return this.getClass().getName();
-    }
-
     // Вывод в строковом виде (краткий, т.к. не все...)
     public String toString() {
         return String.format("-- %s -- %s[%d/%d], Сила: %d --",

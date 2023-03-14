@@ -17,5 +17,11 @@ public interface BaseHeroInterface {
     public default void stepLeft()  { this.step( "влево" ); }
     public default void stepRight() { this.step( "вправо" ); }
 
+
+    // Вывод в строковом виде - Имени класса
+    public default String getInfo() {
+        return getClass().getName();
+    }
+
     public default String getName()      { return ""; }
 }
